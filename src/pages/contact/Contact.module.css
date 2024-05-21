@@ -1,0 +1,50 @@
+/* styles.css */
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+.contact {
+  margin: 200px;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 46px;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add box-shadow for a 3D effect */
+  transition: box-shadow 0.3s ease; /* Add transition for a smooth effect */
+}
+
+.card:hover {
+  animation: bounce 0.5s;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Change box-shadow on hover for a more pronounced effect */
+}
