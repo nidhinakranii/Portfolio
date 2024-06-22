@@ -3,11 +3,11 @@ import profileKatakana from 'assets/katakana-profile.svg?url';
 // import profileImgPlaceholder from 'assets/profile-placeholder.jpg';
 import profileImg from 'assets/20231010_131712.jpg';
 import { Button } from 'components/Button';
-import { DecoderText } from 'components/DecoderText';
+// import { DecoderText } from 'components/DecoderText';
 import { Divider } from 'components/Divider';
 import { Heading } from 'components/Heading';
 import { Image } from 'components/Image';
-import { Link } from 'components/Link';
+// import { Link } from 'components/Link';
 import { Section } from 'components/Section';
 import { Text } from 'components/Text';
 import { Transition } from 'components/Transition';
@@ -21,23 +21,23 @@ const ProfileText = ({ visible, titleId }) => (
       Welcome!
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I'm Blockchain Developer with expertise in Solidity & Rust. My expertise extends to
+      I am Blockchain Developer with expertise in Solidity & Rust. My expertise extends to
       smart contract auditing, ensuring top-notch scalability, adaptability, and
       efficiency for diverse blockchain projects..{' '}
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      With a command over Solidity, Rust, Go, React.JS, web3, Node.js, Python. I'm
+      With a command over Solidity, Rust, Go, React.JS, web3, Node.js, Python. I am
       constantly learning in the dynamic world of blockchain, striving for excellence.{' '}
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      Beyond coding, I'm passionate about giving back through volunteering activities. I'm
-      eager to connect with fellow enthusiasts, innovators, and thought leaders who share
-      a similar drive.{' '}
+      Beyond coding, I am passionate about giving back through volunteering activities. I
+      am eager to connect with fellow enthusiasts, innovators, and thought leaders who
+      share a similar drive.{' '}
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       My core values include integrity, honesty, and a commitment to excellence in every
-      endeavor. Together, let's unlock the full potential of blockchain for a better
-      world. Feel free to reach out, and let's make things happen!{' '}
+      endeavor. Together, let us unlock the full potential of blockchain for a better
+      world. Feel free to reach out, and let us make things happen!{' '}
     </Text>
   </Fragment>
 );
