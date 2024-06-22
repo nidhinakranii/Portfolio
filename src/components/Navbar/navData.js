@@ -19,6 +19,11 @@ export const navLinks = [
 
 export const socialLinks = [
   {
+    label: 'Medium',
+    url: 'https://medium.com/@nidhinakranii',
+    icon: 'medium',
+  },
+  {
     label: 'LinkedIN',
     url: 'https://www.linkedin.com/in/nidhinakrani',
     icon: 'linkedIN',
