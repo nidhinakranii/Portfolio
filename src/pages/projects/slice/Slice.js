@@ -90,17 +90,17 @@ export const Slice = () => {
               <ProjectSectionText>
                 <ul>
                   <li>
-                    'Handling multiple transactions and ensuring atomicity in the voting
-                    process.'{' '}
+                    Handling multiple transactions and ensuring atomicity in the voting
+                    process.{' '}
                   </li>
                   <li>
-                    'Integrating with different Ethereum providers for enhanced user
+                    Integrating with different Ethereum providers for enhanced user
                     accessibility.{' '}
                   </li>
                   <li>
                     {' '}
-                    'Designing a user-friendly interface for both desktop and MetaMask
-                    mobile users.',
+                    Designing a user-friendly interface for both desktop and MetaMask
+                    mobile users.
                   </li>
                 </ul>
               </ProjectSectionText>

@@ -59,7 +59,6 @@ const ImageElements = ({
   loaded,
   inViewport,
   srcSet,
-  placeholder,
   delay,
   src,
   alt,

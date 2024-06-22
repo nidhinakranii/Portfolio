@@ -12,7 +12,6 @@ import { NavToggle } from './NavToggle';
 import styles from './Navbar.module.css';
 import { ThemeToggle } from './ThemeToggle';
 import { navLinks, socialLinks } from './navData';
-import NIDS from '../../assets/NIDS.svg';
 
 export const Navbar = () => {
   const [current, setCurrent] = useState();
@@ -150,7 +149,6 @@ export const Navbar = () => {
           onClick={handleMobileNavClick}
         >
           <Monogram highlight />
-          {/* <NIDS highlight /> */}
         </a>
       </RouterLink>
       <NavToggle onClick={() => dispatch({ type: 'toggleMenu' })} menuOpen={menuOpen} />

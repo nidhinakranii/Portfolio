@@ -6,10 +6,9 @@ import { Text } from 'components/Text';
 import { useReducedMotion } from 'framer-motion';
 import { useWindowSize } from 'hooks';
 import RouterLink from 'next/link';
-import { useState, useEffect } from 'react';
-import { classes, cssProps } from 'utils/style';
+import { useState } from 'react';
+import { cssProps } from 'utils/style';
 import styles from './Articles.module.css';
-import { media } from 'utils/style';
 import { Image } from 'components/Image';
 
 // Import logos for different companies
@@ -17,10 +16,7 @@ import logo1 from 'assets/niqox-logo.png';
 import logo2 from 'assets/chainsense-logo.png';
 import logo3 from 'assets/freelance-logo.png';
 
-const ArticlesPost = ({ slug, title, abstract, featured, banner, index }) => {
-  const [hovered, setHovered] = useState(false);
-  const reduceMotion = useReducedMotion();
-
+const ArticlesPost = ({ slug, featured, index }) => {
   const handleMouseEnter = () => {
     setHovered(true);
   };
@@ -199,7 +195,7 @@ const ArticlesPost = ({ slug, title, abstract, featured, banner, index }) => {
   );
 };
 
-export const Articles = ({ posts, featured }) => {
+export const Articles = ({ posts }) => {
   const { width } = useWindowSize();
   const singleColumnWidth = 1190;
   const isSingleColumn = width <= singleColumnWidth;
