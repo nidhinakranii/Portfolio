@@ -16,7 +16,10 @@ import logo1 from 'assets/niqox-logo.png';
 import logo2 from 'assets/chainsense-logo.png';
 import logo3 from 'assets/freelance-logo.png';
 
-const ArticlesPost = ({ slug, featured, index }) => {
+const ArticlesPost = ({ slug, title, abstract, featured, banner, index }) => {
+  const [hovered, setHovered] = useState(false);
+  const reduceMotion = useReducedMotion();
+
   const handleMouseEnter = () => {
     setHovered(true);
   };
@@ -195,7 +198,7 @@ const ArticlesPost = ({ slug, featured, index }) => {
   );
 };
 
-export const Articles = ({ posts }) => {
+export const Articles = ({ posts, featured }) => {
   const { width } = useWindowSize();
   const singleColumnWidth = 1190;
   const isSingleColumn = width <= singleColumnWidth;
