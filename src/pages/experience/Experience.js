@@ -8,7 +8,7 @@ import { useWindowSize } from 'hooks';
 import RouterLink from 'next/link';
 import { useState } from 'react';
 import { cssProps } from 'utils/style';
-import styles from './Articles.module.css';
+import styles from './Experience.module.css';
 import { Image } from 'components/Image';
 
 // Import logos for different companies
@@ -38,7 +38,7 @@ const ArticlesPost = ({ slug, title, abstract, featured, banner, index }) => {
     logo // Pass the logo as a parameter
   ) => {
     return (
-      <RouterLink href={`/articles/${slug}`} scroll={false}>
+      <RouterLink href={`/Experience/${slug}`} scroll={false}>
         <a
           className={styles.postLink}
           onMouseEnter={handleMouseEnter}
@@ -198,7 +198,7 @@ const ArticlesPost = ({ slug, title, abstract, featured, banner, index }) => {
   );
 };
 
-export const Articles = ({ posts, featured }) => {
+export const Experience = ({ posts, featured }) => {
   const { width } = useWindowSize();
   const singleColumnWidth = 1190;
   const isSingleColumn = width <= singleColumnWidth;
@@ -233,7 +233,7 @@ export const Articles = ({ posts, featured }) => {
   );
 
   return (
-    <article className={styles.articles}>
+    <article className={styles.Experience}>
       <Section className={styles.content}>
         {!isSingleColumn && (
           <div
