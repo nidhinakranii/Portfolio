@@ -1,10 +1,10 @@
-// articles/ArticlesPost.js
+// experience/ExperiencePost.js
 
 import { useState } from 'react';
 import ExperienceDetail from './ExperienceDetail';
-import styles from './Articles.module.css'; // Ensure you import the CSS file
+import styles from './Experience.module.css'; // Ensure you import the CSS file
 
-const ArticlesPost = ({ slug, title, abstract, featured, banner, index }) => {
+const ExperiencePost = ({ slug, title, abstract, featured, banner, index }) => {
   const [selectedExperience, setSelectedExperience] = useState(null);
 
   const handleExperienceClick = (
@@ -74,4 +74,4 @@ const ArticlesPost = ({ slug, title, abstract, featured, banner, index }) => {
   );
 };
 
-export default ArticlesPost;
+export default ExperiencePost;
