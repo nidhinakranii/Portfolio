@@ -16,7 +16,7 @@ import logo1 from 'assets/niqox-logo.png';
 import logo2 from 'assets/chainsense-logo.png';
 import logo3 from 'assets/freelance-logo.png';
 
-const ArticlesPost = ({ slug, title, abstract, featured, banner, index }) => {
+const ExperiencePost = ({ slug, title, abstract, featured, banner, index }) => {
   const [hovered, setHovered] = useState(false);
   const reduceMotion = useReducedMotion();
 
@@ -220,7 +220,7 @@ export const Experience = ({ posts, featured }) => {
     <div className={styles.list}>
       {!isSingleColumn && postsHeader}
       {posts.map(({ slug, title, abstract, featured }, index) => (
-        <ArticlesPost
+        <ExperiencePost
           key={slug}
           slug={slug}
           index={index}
