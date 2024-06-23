@@ -1,4 +1,4 @@
-# Personal portfolio
+# Personal portfolio::
 
 [![Site preview](/public/site-preview.png)]
 
