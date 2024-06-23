@@ -1,6 +1,6 @@
 @custom-media --singleColumnWidth (max-width: 1190px);
 
-.articles {
+.experience {
   display: grid;
   align-items: start;
   grid-template-rows: 1fr auto;
@@ -10,7 +10,7 @@
     overflow-x: hidden;
   }
 }
-/* articles/Articles.module.css */
+/* experience/Experience.module.css */
 
 /* Your existing styles */
 
