@@ -1,1 +1,1 @@
-export { Contact as default } from './Contact';
+export { Skill as default } from './Skill';
