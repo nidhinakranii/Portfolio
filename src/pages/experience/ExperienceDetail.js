@@ -1,4 +1,4 @@
-// articles/ExperienceDetail.js
+// experience/ExperienceDetail.js
 
 import React from 'react';
 import { motion } from 'framer-motion';
