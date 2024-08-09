@@ -21,12 +21,12 @@ const ProfileText = ({ visible, titleId }) => (
       Welcome!
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I am Blockchain Developer with expertise in Solidity & Rust. My expertise extends to
-      smart contract auditing, ensuring top-notch scalability, adaptability, and
-      efficiency for diverse blockchain projects..{' '}
+      I am Blockchain Developer with expertise in Solidity. My expertise extends to smart
+      contract auditing, ensuring top-notch scalability, adaptability, and efficiency for
+      diverse blockchain projects..{' '}
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      With a command over Solidity, Rust, Go, React.JS, web3, Node.js, Python. I am
+      With a command over Solidity, React.JS, web3, Node.js, Python, Devops tools. I am
       constantly learning in the dynamic world of blockchain, striving for excellence.{' '}
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
@@ -66,7 +66,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 secondary
                 className={styles.button}
                 data-visible={visible}
-                href="/contact"
+                href="/skill"
                 icon="send"
               >
                 Send me a message

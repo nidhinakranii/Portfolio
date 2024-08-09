@@ -35,7 +35,7 @@ const ExperiencePost = ({ slug, title, abstract, featured, banner, index }) => {
     experience,
     startMonthYear,
     endMonthYear,
-    logo // Pass the logo as a parameter
+    logo 
   ) => {
     return (
       <RouterLink href={`/Experience/${slug}`} scroll={false}>

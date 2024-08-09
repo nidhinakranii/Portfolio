@@ -65,7 +65,7 @@ export const Home = () => {
   return (
     <div className={styles.home}>
       <Meta
-        title="AI|Blockchain + Developer"
+        title="Blockchain + Developer"
         description="Design portfolio of Nidhi Nakrani — a product designer working on web & mobile
           apps with a focus on motion, experience design, and accessibility."
       />
@@ -104,7 +104,7 @@ export const Home = () => {
         title="Video game progress tracking"
         description="Design and development for a video game tracking app built in React Native"
         buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        buttonLink="https://gamestack.nidhi.com"
         model={{
           type: 'phone',
           alt: 'App login screen',

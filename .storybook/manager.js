@@ -4,8 +4,8 @@ import { addons } from '@storybook/addons';
 addons.setConfig({
   theme: {
     ...themes.dark,
-    brandImage: 'https://hamishw.com/icon.svg',
+    brandImage: 'https://nidhi.com/icon.svg',
     brandTitle: 'Nidhi Nakrani Components',
-    brandUrl: 'https://hamishw.com',
+    brandUrl: 'https://nidhi.com',
   },
 });

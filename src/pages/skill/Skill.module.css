@@ -1,6 +1,70 @@
-/* styles.css */
+.skillContainer {
+  display: flex;
+  flex-direction: column; /* Stack logo and name vertically */
+  align-items: center; /* Center align items horizontally */
+  margin-bottom: 70px; /* Space between each skill item */
+}
+.cardContainer {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 20px;
+}
 
-@keyframes bounce {
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center; /* Center-align the titles */
+}
+
+.skillsList,
+.softSkillsList {
+  margin-bottom: 20px;
+}
+
+.columns {
+  columns: 5;
+  column-gap: 10px;
+}
+
+.softSkillsList {
+  margin-top: 20px;
+}
+
+.softSkills h3,
+.technicalSkills h3 {
+  font-size: 30px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  text-align: center; /* Center-align the titles */
+}
+
+.softSkills ul,
+.technicalSkills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.softSkills li,
+.technicalSkills li {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.divider {
+  border-top: 1px solid #ccc;
+  margin: 40px 0;
+}
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Animation keyframes */
+@keyframes bounceAnimation {
   0%,
   20%,
   50%,
@@ -9,42 +73,46 @@
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-20px);
+    transform: translateY(-30px);
   }
   60% {
-    transform: translateY(-10px);
+    transform: translateY(-15px);
   }
 }
 
 .bounce {
-  animation: bounce 1s infinite;
+  animation: bounceAnimation 1s ease-in-out;
 }
 
-.contact {
-  margin: 200px;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .columns {
+    columns: 3;
+  }
 }
 
-.cardContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 46px;
-  justify-content: center;
+@media (max-width: 576px) {
+  .columns {
+    columns: 1;
+  }
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 16px;
-  background-color: white;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add box-shadow for a 3D effect */
-  transition: box-shadow 0.3s ease; /* Add transition for a smooth effect */
+.skillImage {
+  width: 60px; /* Adjust the size as needed */
+  height: 60px; /* Adjust the size as needed */
 }
 
-.card:hover {
-  animation: bounce 0.5s;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Change box-shadow on hover for a more pronounced effect */
+.skillName {
+  margin-top: 10px; /* Space between logo and name */
+  font-size: 18px; /* Adjust font size as needed */
+}
+
+.learningStatement {
+  margin-top: 30px; /* Space above the statement */
+  padding: 10px; /* Padding around the text */
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  text-align: center; /* Center align text */
+  font-size: 16px; /* Adjust font size */
+  color: #333; /* Dark text color */
 }
