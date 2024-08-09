@@ -1,7 +1,9 @@
-import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
-import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from 'assets/gamestack-login.jpg';
-import sliceTextureLarge from 'assets/voting_main.png';
+// import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
+// import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
+// import gamestackTexture from 'assets/gamestack-login.jpg';
+import stakingcompundimg from 'assets/staking-compound-1.png';
+import votingmainimg from 'assets/voting_main.png';
+import cryptoloopimg from 'assets/cryptoloop-1.png';
 // import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
 // import sliceTexture from 'assets/slice-app.jpg';
 // import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
@@ -80,17 +82,17 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
+        title="Staking-Autocompound"
+        description="Designed a smart cotract for staking compound with testing script"
         buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        buttonLink="/projects/staking"
         model={{
           type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
+          alt: 'Staking Compound image',
           textures: [
             {
-              srcSet: [sliceTextureLarge, sliceTextureLarge],
-              placeholder: sliceTextureLarge,
+              srcSet: [stakingcompundimg, stakingcompundimg],
+              placeholder: stakingcompundimg,
             },
           ],
         }}
@@ -101,21 +103,17 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
+        title="Cryptoloop (ongoing)"
+        description="Designing a platform for social trading on web3!"
         buttonText="View website"
-        buttonLink="https://gamestack.nidhi.com"
+        buttonLink="/projects/cryptoloo"
         model={{
           type: 'phone',
           alt: 'App login screen',
           textures: [
             {
-              srcSet: [gamestackTexture, gamestackTextureLarge],
-              placeholder: gamestackTexturePlaceholder,
-            },
-            {
-              srcSet: [sliceTextureLarge, sliceTextureLarge],
-              placeholder: sliceTextureLarge,
+              srcSet: [cryptoloopimg, cryptoloopimg],
+              placeholder: cryptoloopimg,
             },
           ],
         }}
@@ -128,14 +126,14 @@ export const Home = () => {
         title="E-Vote System on Ethereum Blockchain"
         description="A decentralized voting application built on the Ethereum blockchain, providing a secure and transparent platform for conducting electronic voting."
         buttonText="View project"
-        buttonLink="/projects/slice"
+        buttonLink="/projects/voting"
         model={{
           type: 'laptop',
           alt: 'E-vote system on Ethreum..!',
           textures: [
             {
-              srcSet: [sliceTextureLarge, sliceTextureLarge],
-              placeholder: sliceTextureLarge,
+              srcSet: [votingmainimg, votingmainimg],
+              placeholder: votingmainimg,
             },
           ],
         }}

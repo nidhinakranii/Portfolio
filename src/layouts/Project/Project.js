@@ -39,7 +39,7 @@ export function ProjectHeader({
               iconHoverShift
               className={styles.linkButton}
               icon="chevronRight"
-              href={url}
+              // href={url}
             >
               {linkLabel}
             </Button>

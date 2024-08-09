@@ -66,10 +66,10 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 secondary
                 className={styles.button}
                 data-visible={visible}
-                href="/skill"
+                href="mailto:nidhinakrani@gmail.com?subject=Contact%20from%20Profile%20Page"
                 icon="send"
               >
-                Send me a message
+                Send me an Email
               </Button>
             </div>
             <div className={styles.column}>
