@@ -33,6 +33,7 @@ export const Home = () => {
   const projectThree = useRef();
   const projectFour = useRef();
   const projectFive = useRef();
+  const projectSix = useRef();
   const details = useRef();
 
   useEffect(() => {
@@ -43,6 +44,7 @@ export const Home = () => {
       projectThree,
       projectFour,
       projectFive,
+      projectSix,
       details,
     ];
 
@@ -256,17 +258,17 @@ export const Home = () => {
         }}
       />
       <ProjectSummary
-        id="project-2"
+        id="project-6"
         alternate
-        sectionRef={projectTwo}
-        visible={visibleSections.includes(projectTwo.current)}
-        index={2}
+        sectionRef={projectSix}
+        visible={visibleSections.includes(projectSix.current)}
+        index={6}
         title="Cryptoloop (ongoing)"
         description="Designing a platform for social trading on web3!"
         buttonText="View website"
         buttonLink="/projects/cryptoloo"
         model={{
-          type: 'phone',
+          type: 'Laptop',
           alt: 'App login screen',
           textures: [
             {
