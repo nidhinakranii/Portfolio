@@ -1,10 +1,7 @@
 import alithmcpimg from 'assets/AI-Agent-mcp-main.png';
 import aliagentimg from 'assets/Aiagent.png';
 import soliditygasoptimg from 'assets/soliditygasopt.png';
-import aiagentwrkshpimg from 'assets/aiagentwrkshp.png';
 import educatorworkshopimg from 'assets/Educatorworkshop.png';
-import votingmainimg from 'assets/voting_main.png';
-import cryptoloopimg from 'assets/cryptoloop-1.png';
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { Intro } from 'layouts/Home/Intro';
