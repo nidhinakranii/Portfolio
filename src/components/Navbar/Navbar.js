@@ -141,7 +141,7 @@ export const Navbar = () => {
 
   return (
     <header className={styles.navbar} ref={headerRef}>
-      <RouterLink href={route === '/' ? '/#intro' : '/'} scroll={false}>
+      <RouterLink href={route === '/' ? '/' : '/'} scroll={false}>
         <a
           data-navbar-item
           className={styles.logo}
