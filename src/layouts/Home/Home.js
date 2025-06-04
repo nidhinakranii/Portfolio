@@ -257,7 +257,7 @@ export const Home = () => {
           ],
         }}
       />
-      <ProjectSummary
+      {/* <ProjectSummary
         id="project-6"
         alternate
         sectionRef={projectSix}
@@ -277,7 +277,7 @@ export const Home = () => {
             },
           ],
         }}
-      />
+      /> */}
       {/* <ProjectSummary
         id="project-3"
         sectionRef={projectThree}
