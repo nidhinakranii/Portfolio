@@ -33,7 +33,6 @@ export const Home = () => {
   const projectThree = useRef();
   const projectFour = useRef();
   const projectFive = useRef();
-  const projectSix = useRef();
   const details = useRef();
 
   useEffect(() => {
@@ -44,7 +43,6 @@ export const Home = () => {
       projectThree,
       projectFour,
       projectFive,
-      projectSix,
       details,
     ];
 
