@@ -68,10 +68,11 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
                 <DecoderText text="Nidhi Nakrani" delay={300} />
               </h1>
               <Heading level={0} as="h2" className={styles.title}>
-                <VisuallyHidden className={styles.label}>
+                {/* <VisuallyHidden className={styles.label}>
                   {`Blockchain + ${introLabel}`}
-                </VisuallyHidden>
-                <span aria-hidden className={styles.row}>
+                </VisuallyHidden> */}
+
+                {/* <span aria-hidden className={styles.row}>
                   <span
                     className={styles.word}
                     data-status={status}
@@ -80,8 +81,8 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
                     Blockchain
                   </span>
                   <span className={styles.line} data-status={status} />
-                </span>
-                <div className={styles.row} component="span">
+                </span> */}
+                {/* <div className={styles.row} component="span">
                   <AnimatePresence>
                     {disciplines.map(item => (
                       <Transition
@@ -103,6 +104,70 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
                         )}
                       </Transition>
                     ))}
+                  </AnimatePresence>
+                </div> */}
+                <div className={styles.row} component="span">
+                  <AnimatePresence initial={false}>
+                    {disciplines.map(item => {
+                      const words = item.split(' ');
+                      const staticPart = words.slice(0, -1).join(' '); // e.g., "Developer", "Technical"
+                      const animatedPart = words[words.length - 1]; // e.g., "Relations", "Writer"
+
+                      return (
+                        <Transition
+                          key={item}
+                          in={item === currentDiscipline}
+                          timeout={{ enter: 3000, exit: 2000 }}
+                          unmount
+                        >
+                          {(visible, status) => (
+                            <>
+                              <span
+                                className={`${styles.word} ${styles.staticWord} ${styles.slowReveal}`}
+                                data-status={status}
+                                style={{
+                                  ...cssProps({ delay: tokens.base.durationL }),
+                                  whiteSpace: 'nowrap', // Ensure static+animated are on the same line
+                                  display: 'inline-block',
+                                }}
+                              >
+                                {staticPart}
+                              </span>
+                            </>
+                          )}
+                        </Transition>
+                      );
+                    })}
+                  </AnimatePresence>
+                  <span className={styles.line} data-status={status} />
+                </div>
+                <div className={styles.row} component="span">
+                  <AnimatePresence>
+                    {disciplines.map(item => {
+                      const words = item.split(' ');
+                      const animatedPart = words[words.length - 1]; // e.g., "Relations", "Writer"
+
+                      return (
+                        <Transition
+                          key={item}
+                          in={item === currentDiscipline}
+                          timeout={{ enter: 3000, exit: 2000 }}
+                          unmount
+                        >
+                          {(visible, status) => (
+                            <>
+                              <span
+                                className={styles.word}
+                                data-status={status}
+                                style={cssProps({ delay: tokens.base.durationXS })}
+                              >
+                                {animatedPart}
+                              </span>
+                            </>
+                          )}
+                        </Transition>
+                      );
+                    })}
                   </AnimatePresence>
                 </div>
               </Heading>

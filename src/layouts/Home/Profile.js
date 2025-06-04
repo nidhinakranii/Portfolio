@@ -1,13 +1,9 @@
 import profileKatakana from 'assets/katakana-profile.svg?url';
-// import profileImgLarge from 'assets/profile-large.jpg';
-// import profileImgPlaceholder from 'assets/profile-placeholder.jpg';
 import profileImg from 'assets/20231010_131712.jpg';
 import { Button } from 'components/Button';
-// import { DecoderText } from 'components/DecoderText';
 import { Divider } from 'components/Divider';
 import { Heading } from 'components/Heading';
 import { Image } from 'components/Image';
-// import { Link } from 'components/Link';
 import { Section } from 'components/Section';
 import { Text } from 'components/Text';
 import { Transition } from 'components/Transition';
@@ -21,23 +17,23 @@ const ProfileText = ({ visible, titleId }) => (
       Welcome!
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I am Blockchain Developer with expertise in Solidity. My expertise extends to smart
-      contract auditing, ensuring top-notch scalability, adaptability, and efficiency for
-      diverse blockchain projects..{' '}
+      I’m a Developer Relations Lead and Blockchain Developer passionate about building
+      meaningful tools, empowering communities, and simplifying tech through education and
+      content.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      With a command over Solidity, React.JS, web3, Node.js, Python, Devops tools. I am
-      constantly learning in the dynamic world of blockchain, striving for excellence.{' '}
+      My journey spans smart contract auditing, DevRel strategy, AI education, and
+      developer documentation across ecosystems like MetisL2, LazAI, and Chainsense.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      Beyond coding, I am passionate about giving back through volunteering activities. I
-      am eager to connect with fellow enthusiasts, innovators, and thought leaders who
-      share a similar drive.{' '}
+      With hands-on experience in Solidity, React.js, Node.js, web3, Python, and DevOps, I
+      enjoy translating complex ideas into accessible resources—through blog posts,
+      livestreams, and workshops.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      My core values include integrity, honesty, and a commitment to excellence in every
-      endeavor. Together, let us unlock the full potential of blockchain for a better
-      world. Feel free to reach out, and let us make things happen!{' '}
+      I care deeply about tech for good—leading with empathy, mentoring the next
+      generation, and constantly learning in this dynamic space. If you're building with
+      purpose, I’d love to connect.
     </Text>
   </Fragment>
 );
@@ -69,7 +65,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 href="mailto:nidhinakrani@gmail.com?subject=Contact%20from%20Profile%20Page"
                 icon="send"
               >
-                Send me an Email
+                Let’s build something impactful together.
               </Button>
             </div>
             <div className={styles.column}>
@@ -91,19 +87,8 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   // placeholder={profileImgPlaceholder}
                   srcSet={[profileImg]}
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                  alt="Me standing in front of the Torii on Miyajima, an island off the coast of Hiroshima in Japan"
+                  alt="Me standing"
                 />
-                <svg
-                  aria-hidden="true"
-                  width="500"
-                  zoomAndPan="magnify"
-                  viewBox="10 -120 120 512.499988"
-                  height="1150"
-                  className={styles.svg}
-                  data-visible={visible}
-                >
-                  <use href={`${profileKatakana}#ruprekha-profile`} />
-                </svg>
               </div>
             </div>
           </div>

@@ -15,6 +15,9 @@ import { Image } from 'components/Image';
 import logo1 from 'assets/niqox-logo.png';
 import logo2 from 'assets/chainsense-logo.png';
 import logo3 from 'assets/freelance-logo.png';
+import logo4 from 'assets/simcoe-logo.jpeg';
+import logo5 from 'assets/metis-logo.png';
+import logo6 from 'assets/cryptochicks-logo.jpeg';
 
 const ExperiencePost = ({ slug, title, abstract, featured, banner, index }) => {
   const [hovered, setHovered] = useState(false);
@@ -35,7 +38,7 @@ const ExperiencePost = ({ slug, title, abstract, featured, banner, index }) => {
     experience,
     startMonthYear,
     endMonthYear,
-    logo 
+    logo
   ) => {
     return (
       <RouterLink href={`/Experience/${slug}`} scroll={false}>
@@ -77,7 +80,7 @@ const ExperiencePost = ({ slug, title, abstract, featured, banner, index }) => {
                 </div>
               </div>
             </div>
-            <Text size={featured ? 'l' : 's'} as="p">
+            <Text size={featured ? 'l' : 's'} as="div">
               {experience}
             </Text>
             <div className={styles.postFooter}></div>
@@ -95,105 +98,222 @@ const ExperiencePost = ({ slug, title, abstract, featured, banner, index }) => {
     >
       {renderPostLink(
         0,
-        'Freelancing',
-        'Full-stack Developer',
-        <>
-          <ul>
-            <li>
-              Initiated freelancing during my undergraduate days as a smart contract
-              developer.
-            </li>
-            <li>
-              Transitioned into a versatile full-stack developer, providing expertise in
-              Defi projects, NFT initiatives, and NFT marketplace development.
-            </li>
-            <li>
-              Offered robust and scalable solutions for various freelancing projects,
-              ensuring optimal functionality.
-            </li>
-            <li>
-              Provided blockchain solutions for diverse projects, contributing to their
-              success.
-            </li>
-            <li>
-              Collaborated as one of the team members as an AI developer on a project for
-              a 4-month duration, contributing to the Simcoe County Projection Growth
-              based on 911 Calls.
-            </li>
-          </ul>
-        </>,
-        '2020',
+        'Cryptochicks',
+        'AI & Blockchain Educator',
+        <ul>
+          <li>
+            Delivering live and virtual workshops on AI, Blockchain, and autonomous
+            agents.
+          </li>
+          <li>
+            Educating high school and secondary school students, educators, and tech
+            newcomers globally.
+          </li>
+          <li>
+            Created beginner-friendly material on Ethereum, AI agents, and real-world Web3
+            use cases.
+          </li>
+          <li>
+            Partnered with schools and non-profits to increase youth and educator
+            awareness of emerging tech.
+          </li>
+          <li>
+            Taught over 500+ learners across multiple formats (bootcamps, seminars, and
+            1:1 mentoring).
+          </li>
+        </ul>,
+        '04/2025',
         'Present',
-        logo3 // Pass the logo as a prop for Company Name2
+        logo6
+      )}
+      {renderPostLink(
+        1,
+        'MetisL2',
+        'Developer Relations Lead (LazAI & Alith)',
+        <ul>
+          <li>
+            Leading DevRel efforts for LazAI and Alith, supporting developer growth
+            through content, tooling, and outreach.
+          </li>
+          <li>
+            Created and maintained technical documentation, blog posts, and GitHub
+            tutorials for integrations.
+          </li>
+          <li>
+            Organized and hosted weekly livestreams and hands-on workshops focused on
+            LazAI and Alith technologies.
+          </li>
+          <li>
+            Acted as technical mentor during the Hyperion Hackathon, assisting teams with
+            Alith integration strategies.
+          </li>
+          <li>
+            Built out structured tutorial pipelines and onboarding flows to ease developer
+            adoption.
+          </li>
+          <li>
+            Collaborated with core engineering to translate roadmap features into
+            actionable developer resources.
+          </li>
+          <li>
+            Engaged with community through feedback loops and AMAs to improve developer
+            experience and retention.
+          </li>
+        </ul>,
+        '12/2024',
+        'Present',
+        logo5
       )}
       {renderPostLink(
         2,
-        'Chainsence',
-        'Blockchain Developer',
-        <>
-          <ul>
-            <li>
-              Continued evolution in this field at Chainsense, wearing multiple hats as a
-              Blockchain Developer, Smart Contract Developer, and Auditor.{' '}
-            </li>
-            <li>
-              Actively contributed to open-source projects, specializing in smart contract
-              auditing and architecture.{' '}
-            </li>
-            <li>
-              Developed and audited smart contracts for Defi, Ethereum-based tokens, NFTs,
-              NFTs Marketplaces, Staking, Swapping.{' '}
-            </li>
-            <li>
-              Contributed to the development of a public blockchain based on Proof of
-              Stake.
-            </li>
-            <li>
-              Made significant contributions to Metaverse projects by building scalable
-              smart contract architecture and development.{' '}
-            </li>
-            <li>
-              Actively contributed in Defi initiatives as smart contract developement{' '}
-            </li>
-            <li>
-              Contributed valuable insights to enhance various facets of smart contract
-              development, including scalability, security, efficiency, and adaptability.{' '}
-            </li>
-          </ul>
-        </>,
-        '5/2022',
-        '5/2023',
-        logo2 // Pass the logo as a prop for Company Name2
+        'MetisL2',
+        'Technical Content Writer',
+        <ul>
+          <li>
+            Produced technical content for MetisDevs X handle, improving reach and
+            developer engagement.
+          </li>
+          <li>
+            Crafted developer-focused documentation, tutorials, and blog posts to support
+            Metis Layer-2 adoption.
+          </li>
+          <li>
+            Led a targeted outreach program that boosted developer participation by 40%.
+          </li>
+          <li>
+            Refined MetisL2’s official docs to enhance readability and dev onboarding
+            efficiency.
+          </li>
+          <li>
+            Spearheaded plugin integration documentation and developer tooling tutorials.
+          </li>
+          <li>
+            Organized and hosted high-engagement AMAs and workshops, including during CCIP
+            Week.
+          </li>
+          <li>
+            Contributed to a 46% growth in X (Twitter) engagement through consistent,
+            technical social content.
+          </li>
+        </ul>,
+        '09/2024',
+        '12/2024',
+        logo5
       )}
       {renderPostLink(
-        3,
-        'Niqox',
-        'Blockchain Developer - Trainee',
-        <>
-          <ul>
-            <li>
-              Joined Niqox as a Blockchain Developer Trainee, initiating my professional
-              journey in blockchain development.
-            </li>
-            <li>
-              Honed expertise in public blockchain, delving into smart contract
-              development, NFTs, marketplaces, staking, swapping, and more.
-            </li>
-            <li>
-              Explored React and Web3 during my internship, expanding my skill set to
-              incorporate frontend development and blockchain integration.
-            </li>
-            <li>
-              Learned and applied critical problem-solving, scalability, adaptability, and
-              security principles, ensuring a well-rounded expertise in crafting robust
-              and efficient blockchain solutions.{' '}
-            </li>
-          </ul>
-        </>,
-        '12/2022',
-        '5/2023',
-        logo1 // Pass the logo as a prop for Company Name3
+        4,
+        'County of Simcoe',
+        'AI Developer (Projection Growth Team)',
+        <ul>
+          <li>
+            Provided projection growth predictions for Simcoe County emergency service
+            (911) based on population and call data.
+          </li>
+          <li>Enhanced prediction accuracy by training and optimizing CNN models.</li>
+          <li>
+            Improved emergency response strategies through AI-driven insights and data
+            analysis.
+          </li>
+          <li>
+            Contributed as one of four selected AI developers, supporting county-wide
+            strategic planning.
+          </li>
+        </ul>,
+        '09/2023',
+        '12/2023',
+        logo4
       )}
+      {renderPostLink(
+        5,
+        'Freelancing',
+        'Full-stack Developer',
+        <ul>
+          <li>
+            Initiated freelancing during my undergraduate days as a smart contract
+            developer.
+          </li>
+          <li>
+            Transitioned into a versatile full-stack developer, providing expertise in
+            Defi projects, NFT initiatives, and NFT marketplace development.
+          </li>
+          <li>
+            Offered robust and scalable solutions for various freelancing projects,
+            ensuring optimal functionality.
+          </li>
+          <li>
+            Provided blockchain solutions for diverse projects, contributing to their
+            success.
+          </li>
+          <li>
+            Collaborated as one of the team members as an AI developer on a project for a
+            4-month duration, contributing to the Simcoe County Projection Growth based on
+            911 Calls.
+          </li>
+        </ul>,
+        '2020',
+        'Present',
+        logo3
+      )}
+      {renderPostLink(
+        6,
+        'Chainsense',
+        'Blockchain Developer / Smart Contract Auditor',
+        <ul>
+          <li>
+            Achieved 10k+ transactions in early launch of a multichain metaverse project
+            through contract design, testing, and deployment.
+          </li>
+          <li>
+            Audited over 150 smart contracts and identified 40+ critical vulnerabilities
+            using MythX, Slither, Foundry, and Hardhat.
+          </li>
+          <li>
+            Deployed 150+ smart contracts on mainnet, enhancing functionality and security
+            of the ecosystem.
+          </li>
+          <li>
+            Developed interactive dApps using ReactJS, Node.js, Web3.js, and integrated
+            them with Ethereum-based platforms.
+          </li>
+          <li>
+            Utilized Docker for scalable deployment, and integrated decentralized storage
+            via IPFS and Sia.
+          </li>
+          <li>
+            Implemented Oracle-based data access to connect smart contracts with external
+            systems.
+          </li>
+        </ul>,
+        '05/2022',
+        '05/2023',
+        logo2
+      )}
+      {renderPostLink(
+        7,
+        'Niqox',
+        'Blockchain Developer',
+        <ul>
+          <li>
+            Developed 80+ secure smart contracts using Solidity for ERC20, ERC721,
+            ERC1155, DeFi, and NFT marketplaces.
+          </li>
+          <li>
+            Created a full-stack platform using Web3.js, MetaMask, Node.js, and IPFS for
+            blockchain interactions and storage.
+          </li>
+          <li>
+            Led testing, debugging, and optimization to ensure robust and efficient
+            blockchain architecture.
+          </li>
+          <li>
+            Delivered technical presentations on blockchain trends to internal teams and
+            stakeholders.
+          </li>
+        </ul>,
+        '12/2021',
+        '04/2022',
+        logo1
+      )}{' '}
     </article>
   );
 };

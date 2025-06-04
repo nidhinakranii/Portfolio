@@ -1,6 +1,6 @@
 export const navLinks = [
   {
-    label: 'Projects',
+    label: 'DevRel',
     pathname: '/#project-1',
   },
   {
@@ -30,7 +30,7 @@ export const socialLinks = [
   },
   {
     label: 'Email',
-    url: 'mailto:nidhinakranii@gmail.com',
+    url: 'mailto:nidhiinakrani@gmail.com',
     icon: 'email',
   },
   {

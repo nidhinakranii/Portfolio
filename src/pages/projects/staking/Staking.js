@@ -39,7 +39,6 @@ export const Staking = () => {
           title={title}
           description={description}
           url="https://github.com/nidhinakranii/Staking-Autocompound"
-          
           roles={roles}
         />
         <ProjectSection padding="top">

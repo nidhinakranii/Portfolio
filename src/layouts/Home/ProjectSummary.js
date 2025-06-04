@@ -21,6 +21,7 @@ export const ProjectSummary = ({
   sectionRef,
   index,
   title,
+  subtitle,
   description,
   model,
   buttonText,
@@ -75,6 +76,7 @@ export const ProjectSummary = ({
         id={titleId}
       >
         {title}
+        {subtitle && <div className={styles.subtitle}>{subtitle}</div>}
       </Heading>
       <Text className={styles.description} data-visible={visible} as="p">
         {description}
@@ -91,8 +93,11 @@ export const ProjectSummary = ({
     <div className={styles.preview}>
       {model.type === 'laptop' && (
         <>
-          {renderKatakana('laptop', visible)}
-          <div className={styles.model} data-device="laptop">
+          {/* {renderKatakana('laptop', visible)} */}
+          <div
+            className={`${styles.model} ${alternate ? styles.modelLeftAligned : ''}`}
+            data-device="laptop"
+          >
             <Model
               alt={model.alt}
               cameraPosition={{ x: 0, y: 0, z: 8 }}
@@ -111,7 +116,7 @@ export const ProjectSummary = ({
           </div>
         </>
       )}
-      {model.type === 'phone' && (
+      {/* {model.type === 'phone' && (
         <>
           {renderKatakana('phone', visible)}
           <div className={styles.model} data-device="phone">
@@ -141,7 +146,7 @@ export const ProjectSummary = ({
             />
           </div>
         </>
-      )}
+      )} */}
     </div>
   );
 

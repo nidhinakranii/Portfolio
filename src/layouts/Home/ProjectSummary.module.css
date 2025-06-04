@@ -104,12 +104,10 @@
 
     @media (--mediaTablet) {
       --width: 140%;
-
       top: 10%;
-      left: 0;
+      left: 100%;
     }
   }
-
   &[data-device='phone'] {
     --width: 116%;
     --aspectRatio: 7 / 10;
@@ -139,6 +137,21 @@
   }
 }
 
+.modelLeftAligned {
+  left: -10% !important;
+  --width: 150% !important;
+
+  @media (--mediaTablet) {
+    /* left: 1000 !important; */
+    top: 10% !important;
+  }
+}
+.subtitle {
+  font-size: var(--fontSizeBodyS); /* Smaller font */
+  color: var(--colorTextBody); /* Lighter color */
+  font-weight: 500;
+  margin-top: var(--spaceXS);
+}
 .svg {
   opacity: 0;
   transition: opacity 1200ms ease 1400ms;
