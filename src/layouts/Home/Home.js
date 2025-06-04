@@ -71,7 +71,7 @@ export const Home = () => {
   return (
     <div className={styles.home}>
       <Meta
-        title="Developer Relations and Blockchain Developer | Nidhi Nakrani"
+        title="Developer Relations and Blockchain Developer"
         description="Design portfolio of Nidhi Nakrani — DevRel and Developer."
       />
       <Intro
