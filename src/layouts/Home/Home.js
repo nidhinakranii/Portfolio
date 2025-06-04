@@ -2,6 +2,7 @@ import alithmcpimg from 'assets/AI-Agent-mcp-main.png';
 import aliagentimg from 'assets/Aiagent.png';
 import soliditygasoptimg from 'assets/soliditygasopt.png';
 import educatorworkshopimg from 'assets/Educatorworkshop.png';
+import stakingimg from 'assets/staking-compound-1.png';
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { Intro } from 'layouts/Home/Intro';
@@ -30,10 +31,19 @@ export const Home = () => {
   const projectTwo = useRef();
   const projectThree = useRef();
   const projectFour = useRef();
+  const projectFive = useRef();
   const details = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, projectFour, details];
+    const sections = [
+      intro,
+      projectOne,
+      projectTwo,
+      projectThree,
+      projectFour,
+      projectFive,
+      details,
+    ];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -224,12 +234,11 @@ export const Home = () => {
           ],
         }}
       />
-
-      {/* <ProjectSummary
-        id="project-1"
-        sectionRef={projectOne}
-        visible={visibleSections.includes(projectOne.current)}
-        index={1}
+      <ProjectSummary
+        id="project-5"
+        sectionRef={projectFive}
+        visible={visibleSections.includes(projectFive.current)}
+        index={5}
         title="Staking-Autocompound"
         description="Designed a smart cotract for staking compound with testing script"
         buttonText="View project"
@@ -239,13 +248,13 @@ export const Home = () => {
           alt: 'Staking Compound image',
           textures: [
             {
-              srcSet: [alithmcpimg, alithmcpimg],
-              placeholder: alithmcpimg,
+              srcSet: [stakingimg, stakingimg],
+              placeholder: stakingimg,
             },
           ],
         }}
-      /> */}
-      {/* <ProjectSummary
+      />
+      <ProjectSummary
         id="project-2"
         alternate
         sectionRef={projectTwo}
@@ -266,7 +275,7 @@ export const Home = () => {
           ],
         }}
       />
-      <ProjectSummary
+      {/* <ProjectSummary
         id="project-3"
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
