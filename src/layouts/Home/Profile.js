@@ -17,9 +17,9 @@ const ProfileText = ({ visible, titleId }) => (
       Welcome!
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m a Developer Relations Lead and Blockchain Developer passionate about building
-      meaningful tools, empowering communities, and simplifying tech through education and
-      content.
+      I&apos;m a Developer Relations Lead and Blockchain Developer passionate about
+      building meaningful tools, empowering communities, and simplifying tech through
+      education and content.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       My journey spans smart contract auditing, DevRel strategy, AI education, and
@@ -32,8 +32,8 @@ const ProfileText = ({ visible, titleId }) => (
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       I care deeply about tech for good—leading with empathy, mentoring the next
-      generation, and constantly learning in this dynamic space. If you're building with
-      purpose, I’d love to connect.
+      generation, and constantly learning in this dynamic space. If you&apos;re building
+      with purpose, I&apos;d love to connect.
     </Text>
   </Fragment>
 );
@@ -62,7 +62,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 secondary
                 className={styles.button}
                 data-visible={visible}
-                href="mailto:nidhinakrani@gmail.com?subject=Contact%20from%20Profile%20Page"
+                href="mailto:nidhiinakrani@gmail.com?subject=Contact%20from%20Profile%20Page"
                 icon="send"
               >
                 Let’s build something impactful together.
