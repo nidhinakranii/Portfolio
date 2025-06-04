@@ -65,7 +65,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 href="mailto:nidhiinakrani@gmail.com?subject=Contact%20from%20Profile%20Page"
                 icon="send"
               >
-                Let’s build something impactful together.
+                Send an email
               </Button>
             </div>
             <div className={styles.column}>
