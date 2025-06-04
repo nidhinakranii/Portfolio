@@ -3,6 +3,7 @@ import aliagentimg from 'assets/Aiagent.png';
 import soliditygasoptimg from 'assets/soliditygasopt.png';
 import educatorworkshopimg from 'assets/Educatorworkshop.png';
 import stakingimg from 'assets/staking-compound-1.png';
+import cryptoloopimg from 'assets/cryptoloop.png';
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { Intro } from 'layouts/Home/Intro';
